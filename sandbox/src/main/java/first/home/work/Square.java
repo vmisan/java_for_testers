@@ -3,8 +3,8 @@ package first.home.work;
 public class Square {
   public double l;
 
-  public Square(double l){
-    this.l = l;
+  public Square(double len){
+    this.l = len;
   }
 
   public double area(){
