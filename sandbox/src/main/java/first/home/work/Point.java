@@ -16,7 +16,6 @@ public class Point {
     double b = this.y - pointToCalculate.y;
     double c = 2;
     return Math.sqrt(Math.pow(a,c) + Math.pow(b,c));
-
   }
 
 }
