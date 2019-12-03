@@ -32,7 +32,7 @@ public class GroupCreationTests {
     fillGroupForm(new GroupData("first group", "logo", "footer"));
     submitGroupCreation("submit");
     returnToGroupPage("group page");
-    //wd.findElement(By.linkText("Logout")).click();
+    wd.findElement(By.linkText("Logout")).click();
   }
 
   private void returnToGroupPage(String s) {
