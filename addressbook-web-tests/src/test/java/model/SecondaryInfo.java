@@ -1,4 +1,4 @@
-package second.home.work;
+package model;
 
 public class SecondaryInfo {
   private final String secondaryAddress;

@@ -1,10 +1,14 @@
-package second.home.work;
+package tests;
 
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import model.Birthday;
+import model.SecondaryInfo;
+import model.TelephoneNumber;
+import model.UserInfo;
 
 public class ContactCreationTests {
   private WebDriver wd;
