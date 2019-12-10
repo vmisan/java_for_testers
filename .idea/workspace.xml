@@ -150,6 +150,7 @@
       <recent name="first.home.work" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="appmanager" />
       <recent name="second.home.work" />
     </key>
   </component>
@@ -165,27 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupDeletionTests">
-    <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;second.home.work.GroupCreationTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG.ContactCreationTests (1)">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="untitled" />
       <option name="VM_PARAMETERS" />
@@ -233,16 +214,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactCreationTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="second.home.work.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="second.home.work" />
-      <option name="MAIN_CLASS_NAME" value="second.home.work.ContactCreationTests" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ContactCreationTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -250,16 +231,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DistanceTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
+    <configuration name="ContactsTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="first.home.work.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="first.home.work" />
-      <option name="MAIN_CLASS_NAME" value="first.home.work.DistanceTest" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ContactsTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupCreationTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.GroupCreationTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -271,12 +269,12 @@
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="second.home.work.*" />
+          <option name="PATTERN" value="appmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="second.home.work" />
-      <option name="MAIN_CLASS_NAME" value="second.home.work.GroupCreationTests" />
+      <option name="MAIN_CLASS_NAME" value="second.home.work.tests.GroupCreationTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -288,12 +286,12 @@
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="second.home.work.*" />
+          <option name="PATTERN" value="appmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="second.home.work" />
-      <option name="MAIN_CLASS_NAME" value="second.home.work.GroupDeletionTests" />
+      <option name="MAIN_CLASS_NAME" value="second.home.work.tests.GroupDeletionTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -303,11 +301,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupDeletionTests" />
+        <item itemvalue="TestNG.ContactCreationTests (1)" />
+        <item itemvalue="TestNG.ContactsTests" />
+        <item itemvalue="TestNG.GroupCreationTests (1)" />
         <item itemvalue="TestNG.GroupCreationTests" />
-        <item itemvalue="Gradle.GroupCreationTests" />
-        <item itemvalue="TestNG.ContactCreationTests" />
-        <item itemvalue="TestNG.DistanceTest" />
+        <item itemvalue="TestNG.GroupDeletionTests" />
       </list>
     </recent_temporary>
   </component>
@@ -341,9 +339,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/second/home/work/ContactCreationTests.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/BaseHelper.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
