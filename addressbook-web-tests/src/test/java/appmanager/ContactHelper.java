@@ -63,4 +63,16 @@ public class ContactHelper extends BaseHelper {
     type(By.name("phone2"), secondaryInfo.getSecondaryPhone());
     type(By.name("notes"), secondaryInfo.getNote());
   }
+
+  public void selectCertainContact() {
+    click(By.xpath("//img[@alt='Edit']"));
+  }
+
+  public void deleteCertainContact() {
+    click(By.xpath("(//input[@name='update'])[3]"));
+  }
+
+  public void updateCertainContact() {
+    click(By.xpath("(//input[@name='update'])[2]"));
+  }
 }
