@@ -1,6 +1,6 @@
-package tests;
+package second.home.work.tests;
 
-import model.*;
+import second.home.work.model.*;
 import org.testng.annotations.Test;
 
 public class ContactCreationTests extends TestBase {

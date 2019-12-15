@@ -1,4 +1,4 @@
-package model;
+package second.home.work.model;
 
 public class TelephoneNumber {
   private final String homeTelephoneNumber;

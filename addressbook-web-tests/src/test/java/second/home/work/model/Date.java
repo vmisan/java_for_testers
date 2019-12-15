@@ -1,4 +1,4 @@
-package model;
+package second.home.work.model;
 
 public class Date {
   private final String Day;

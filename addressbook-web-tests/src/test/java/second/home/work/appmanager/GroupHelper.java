@@ -1,6 +1,6 @@
-package appmanager;
+package second.home.work.appmanager;
 
-import model.GroupData;
+import second.home.work.model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

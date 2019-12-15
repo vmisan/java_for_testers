@@ -1,4 +1,4 @@
-package model;
+package second.home.work.model;
 
 public class UserInfo {
   private final String firstName;

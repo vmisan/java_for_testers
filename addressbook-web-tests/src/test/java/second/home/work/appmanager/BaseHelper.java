@@ -1,6 +1,6 @@
-package appmanager;
+package second.home.work.appmanager;
 
-import model.Date;
+import second.home.work.model.Date;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
@@ -10,8 +10,8 @@ import org.openqa.selenium.support.ui.Select;
 public class BaseHelper {
   protected WebDriver wd;
 
-  public BaseHelper(WebDriver wd) {
-    this.wd = wd;
+  public BaseHelper(WebDriver browser) {
+    this.wd = browser;
   }
 
   protected void click(By locator) {

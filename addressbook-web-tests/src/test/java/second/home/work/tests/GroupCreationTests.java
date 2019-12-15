@@ -1,7 +1,7 @@
-package tests;
+package second.home.work.tests;
 
 import org.testng.annotations.*;
-import model.GroupData;
+import second.home.work.model.GroupData;
 
 public class GroupCreationTests extends TestBase {
 
