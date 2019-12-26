@@ -1,9 +1,6 @@
 package second.home.work.appmanager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
 
 public class BaseHelper {
@@ -53,4 +50,12 @@ public class BaseHelper {
     }
   }
 
+  protected boolean isElementPresent(By locator) {
+    try{
+      wd.findElement(locator);
+      return true;
+    } catch (NoSuchElementException ex){
+      return false;
+    }
+  }
 }

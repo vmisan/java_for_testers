@@ -1,5 +1,8 @@
 package second.home.work.appmanager;
 
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import second.home.work.model.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,39 +17,37 @@ public class ContactHelper extends BaseHelper {
     click(By.xpath("(//input[@name='submit'])[2]"));
   }
 
-  public void fillUserInfo(ContactData userInfo) {
+  public void fillUserInfo(ContactData userInfo, boolean creation) {
     type(By.name("firstname"), userInfo.getFirstName());
-    //type(By.name("middlename"), userInfo.getMiddleName());
     type(By.name("lastname"), userInfo.getLastName());
-    //type(By.name("nickname"), userInfo.getNickName());
-    //type(By.name("title"), userInfo.getTitle());
-    //type(By.name("company"), userInfo.getCompanyName());
     type(By.name("address"), userInfo.getCompanyAddress());
     type(By.name("home"), userInfo.getHomeTelephoneNumber());
     type(By.name("email"), userInfo.firstEmail());
 
+    if(creation){
+      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(userInfo.getGroup());
+    } else {
+      Assert.assertFalse(isElementPresent(By.name("new_group")));
+    }
   }
 
-/*
-  public void fillHomePage(String homepage) {
-    type(By.name("homepage"), homepage);
-  }
-
-  public void fillBirthDay(Date birthday) {
-    selectDate(By.name("bday"), By.name("bmonth"), By.name("byear"), birthday);
-  }
-
-  public void fillAnniversary(Date anniversaryDay) {
-    selectDate(By.name("aday"), By.name("amonth"), By.name("ayear"), anniversaryDay);
-  }
-*/
+  /*
+    public void fillHomePage(String homepage) {
+      type(By.name("homepage"), homepage);
+    }
+  
+    public void fillBirthDay(Date birthday) {
+      selectDate(By.name("bday"), By.name("bmonth"), By.name("byear"), birthday);
+    }
+  
+    public void fillAnniversary(Date anniversaryDay) {
+      selectDate(By.name("aday"), By.name("amonth"), By.name("ayear"), anniversaryDay);
+    }
+  */
   public void goToCreateNewContactPage() {
     click(By.linkText("add new"));
   }
 
-  public void selectGroupForContact() {
-    select(By.name("new_group"), "first group");
-  }
 
   public void selectCertainContact() {
     click(By.xpath("//img[@alt='Edit']"));
