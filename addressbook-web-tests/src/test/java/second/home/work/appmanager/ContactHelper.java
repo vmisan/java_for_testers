@@ -14,7 +14,7 @@ public class ContactHelper extends BaseHelper {
     click(By.xpath("(//input[@name='submit'])[2]"));
   }
 
-  public void fillUserInfo(UserInfo userInfo) {
+  public void fillUserInfo(ContactData2 userInfo) {
     type(By.name("firstname"), userInfo.getFirstName());
     type(By.name("middlename"), userInfo.getMiddleName());
     type(By.name("lastname"), userInfo.getLastName());
