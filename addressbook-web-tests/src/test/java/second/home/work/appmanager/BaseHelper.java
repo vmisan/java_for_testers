@@ -1,13 +1,10 @@
 package second.home.work.appmanager;
 
-import second.home.work.model.Date;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-
-import static javax.swing.text.html.CSS.getAttribute;
 
 public class BaseHelper {
   protected WebDriver wd;
@@ -40,13 +37,13 @@ public class BaseHelper {
     click(locator);
     new Select(find(locator)).selectByVisibleText(selectedValue);
   }
-
+/*
   protected void selectDate(By dayPath, By monthPath, By yearPath, Date date) {
     select(dayPath, date.getDay());
     select(monthPath, date.getMonth());
     type(yearPath, date.getYear());
   }
-
+*/
   private boolean isAlertPresent() {
     try {
       wd.switchTo().alert();
