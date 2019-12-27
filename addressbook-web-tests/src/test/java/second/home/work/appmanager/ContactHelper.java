@@ -17,15 +17,19 @@ public class ContactHelper extends BaseHelper {
     click(By.xpath("(//input[@name='submit'])[2]"));
   }
 
-  public void fillUserInfo(ContactData userInfo, boolean creation) {
+  public void fillUserInfo(ContactData userInfo, boolean isGroupPresented) {
     type(By.name("firstname"), userInfo.getFirstName());
     type(By.name("lastname"), userInfo.getLastName());
     type(By.name("address"), userInfo.getCompanyAddress());
     type(By.name("home"), userInfo.getHomeTelephoneNumber());
     type(By.name("email"), userInfo.firstEmail());
 
-    if(creation){
-      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(userInfo.getGroup());
+    if(isGroupPresented){
+      if(userInfo.getGroup() != null){
+        new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(userInfo.getGroup());
+      }else {
+        Assert.assertTrue(isElementPresent(By.name("new_group")));
+      }
     } else {
       Assert.assertFalse(isElementPresent(By.name("new_group")));
     }
@@ -59,5 +63,15 @@ public class ContactHelper extends BaseHelper {
 
   public void updateCertainContact() {
     click(By.xpath("(//input[@name='update'])[2]"));
+  }
+
+  public void createContact(ContactData contactData, boolean isGroupPresented) {
+    goToCreateNewContactPage();
+    fillUserInfo(contactData, isGroupPresented);
+    submitNewContact();
+  }
+
+  public boolean isThereAContact() {
+    return isElementPresent(By.name("selected[]"));
   }
 }
